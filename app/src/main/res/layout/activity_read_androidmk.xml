@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".read.read_androidmkActivity">
+        <TextView
+            android:id="@+id/b_t"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#DD2121"
+            android:background="@drawable/et_1"
+            android:text="标题" />
+
+        <WebView
+            android:id="@+id/webView_mk"
+            android:layout_marginTop="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_bk"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="返回" />
+
+            <Button
+                android:id="@+id/bt_sc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:text="收藏"
+                />
+
+            <Button
+                android:id="@+id/bt_bj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="添加笔记"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
